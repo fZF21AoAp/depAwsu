@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPaws</title>
+    <link rel="icon" type="image/x-icon" href="/img/edupaws.png">
+    <link rel="stylesheet" href="/css/mascottes.css">
+    <link rel="stylesheet" href="/css/crossword.css">
+    <link href="https://fonts.cdnfonts.com/css/marykate" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+            <a href="/">
+                <img src="/img/edupaws.png" alt="EduPaws">
+            </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">OVER ONS</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content-v">
+            <div class="content">
+                <div class="content-section" id="section1">
+                    <h1>Vickey</h1>
+                    <p>
+                        Hoi hoi, ik ben Vickey de vaquita!
+                        Ik ben een vaquita, het kleinste zeezoogdier ter wereld. Je kunt me herkennen door de zwarte ringen rond mijn ogen. Ik ben ongeveer zo groot als een mens en ik leef enkel in de warme zee bij Mexico. Ook ben ik heel verlegen en heel moeilijk te zien, zelfs wetenschappers vinden het moeilijk om mij te spotten!
+                        Er is wel een groot probleem… Er zijn nog maar ongeveer 10 vaquita’s over. Mensen jagen niet op mij, maar wel op een andere vis: de totoaba. Vissers gebruiken grote netten om op deze vis te jagen, maar ik kom er per ongeluk in vast te zitten. Dat is best eng, want als ik niet naar boven kan om adem te halen, verdrink ik.
+                        Gelukkig proberen mensen mij te helpen door de gevaarlijke netten weg te halen. Maar jij kan ook helpen!
+                        Vertel zeker mijn verhaal aan anderen, hoe meer mensen over de vaquita horen, hoe beter!
+                        Koop ook geen producten die illegale visserij steunen! Vraag thuis of jullie vis kopen die goed is voor de natuur! 
+                        Samen kunnen wij ervoor zorgen dat vaquita’s blijven bestaan. Help jij mee?
+                    </p>
+                    <img src="/img/vickey.png" alt="Vickey">
+                </div>
+                
+                <div class="content-section" id="section2">
+                    <div class="crossword-container">
+                        <div class="crossword-puzzle">
+                            <div class="crossword-grid"></div>
+                            <div class="clues">
+                                <div class="across-clues">
+
+                                    <ul id="across-list"></ul>
+                                </div>
+                                <div class="down-clues">
+                                    <ul id="down-list"></ul>
+                                </div>
+                            </div>
+                            <div class="answer-section">
+                                <input type="text" id="answer-input" placeholder="Typ je eindantwoord hier">
+                                <button id="check-answer">Controleer Antwoord</button>
+                                <p id="result-message"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/crossword.js"></script>
+</body>
+</html>

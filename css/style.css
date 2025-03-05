@@ -1,0 +1,247 @@
+:root {
+    --color1: #9cb87c;
+    --color2: #5c6652;
+    --color3: #f5f1e8;
+    --borris: #b99178;
+    --otto: #fcf8f5;
+    --vicky: #87b4d0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "MaryKate", sans-serif;
+    font-size: 25px;
+    background-color: var(--color1);
+    position: relative;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: var(--color3);
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+.hero-text {
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+/* Separator */
+.separator {
+    height: 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 5px,
+        var(--color2) 5px,
+        var(--color2) 7px
+    );
+    margin: 50px 0;
+}
+/* Content Area */
+.content {
+    background-color: var(--color2);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.content-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.content img {
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.content h3 {
+    margin-top: 10px;
+    color: var(--color2);
+}
+.content a {
+    text-decoration: none;
+}
+/* Contact Area */
+.contact {
+    background-color: var(--color2);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 325px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.contact-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.contact-section h2 {
+    color: var(--color2);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.contact-text {
+    text-align: left;
+    line-height: 1.6;
+    color: var(--color2);
+    font-size: 18px;
+}
+.contact-text p {
+    margin-bottom: 15px;
+}
+.socials {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    color: var(--color2);
+}
+.socials p {
+    font-size: 15px;
+}
+.socials a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.error {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    
+    .container {
+        width: 95%;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo img {
+        max-width: 150px;
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    .hero-text {
+        max-width: 90%;
+        padding: 10px;
+    }
+    
+    .content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .content img {
+        width: 120px;
+    }
+    
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .contact-section {
+        padding: 15px;
+    }
+    
+    .contact-text {
+        font-size: 16px;
+    }
+    
+    .paw-decoration {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .logo img {
+        max-width: 120px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .hero {
+        padding: 20px 0;
+    }
+    
+    .separator {
+        margin: 30px 0;
+    }
+    
+    .contact-section h2 {
+        font-size: 22px;
+    }
+    
+    .contact-text {
+        font-size: 15px;
+    }
+}
