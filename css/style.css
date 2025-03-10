@@ -104,9 +104,21 @@ nav ul li a {
     min-height: 325px;
     width: 100%;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about {
+    background-color: var(--color2);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 325px;
+    width: 100%;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 }
+
 .contact-section {
     background-color: white;
     border-radius: 10px;
@@ -118,6 +130,19 @@ nav ul li a {
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+.about-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.about-section h2 {
+    color: var(--color2);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
 .contact-text {
     text-align: left;
     line-height: 1.6;
@@ -196,6 +221,11 @@ nav ul li a {
         grid-template-columns: 1fr;
         gap: 15px;
     }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
     
     .contact-section {
         padding: 15px;
@@ -241,6 +271,10 @@ nav ul li a {
         font-size: 22px;
     }
     
+    .about-section h2 {
+        font-size: 22px;
+    }
+
     .contact-text {
         font-size: 15px;
     }

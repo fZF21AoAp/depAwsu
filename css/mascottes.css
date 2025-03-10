@@ -2,9 +2,6 @@
     --color1: #9cb87c;
     --color2: #5c6652;
     --color3: #f5f1e8;
-    --borris: #b99178;
-    --otto: #fcf8f5;
-    --vicky: #87b4d0;
     --bordercolor: black;
     --gray: #9ca3af;
 }
@@ -368,6 +365,10 @@ main img {
     border-radius: 50%;
 }
 
+.grid-cell.highlighted {
+    background-color: #d4a6e3 !important; /* Purple color for highlighted cells */
+}
+
 .clues {
     font-family: sans-serif;
     font-size: 13px;
@@ -432,6 +433,67 @@ main img {
 #result-message {
     margin-top: 1rem;
     font-weight: bold;
+}
+
+/* Updated Media Queries */
+@media screen and (max-width: 768px) {
+    .crossword-container {
+        padding: 1rem;
+    }
+
+    .crossword-puzzle {
+        max-width: 100%;
+    }
+
+    .grid-cell {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .clues {
+        flex-direction: column;
+    }
+
+    .across-clues, .down-clues {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .answer-section {
+        padding: 0 1rem;
+    }
+
+    #answer-input {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-cell {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .grid-cell .cell-number {
+        font-size: 8px;
+    }
+
+    .clues li {
+        font-size: 14px;
+    }
+
+    #answer-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #check-answer {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
 
 
