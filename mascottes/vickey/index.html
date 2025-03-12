@@ -17,9 +17,9 @@
     <div class="container">
         <header>
             <div class="logo">
-            <a href="/">
-                <img src="/img/edupaws.png" alt="EduPaws">
-            </a>
+                <a href="/">
+                    <img src="/img/edupaws.png" alt="EduPaws">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -44,26 +44,27 @@
                     </p>
                     <img src="/img/vickey.png" alt="Vickey">
                 </div>
-                
-                <div class="content-section" id="section2">
-                    <div class="crossword-container">
-                        <div class="crossword-puzzle">
-                            <div class="crossword-grid"></div>
-                            <div class="clues">
-                                <div class="across-clues">
 
-                                    <ul id="across-list"></ul>
-                                </div>
-                                <div class="down-clues">
-                                    <ul id="down-list"></ul>
-                                </div>
+                <!-- Crossword Game -->
+                <div class="crossword-container">
+                    <h2>Kruiswoordraadsel</h2>
+                    <p>Klik op de hint om de woord te raden</p>
+                    <div class="crossword-puzzle">
+                        <div class="crossword-grid"></div>
+                        <div class="clues">
+                            <div class="across-clues">
+                                <h3>Horizontaal</h3>
+                                <ul></ul>
                             </div>
-                            <div class="answer-section">
-                                <input type="text" id="answer-input" placeholder="Typ je eindantwoord hier">
-                                <button id="check-answer">Controleer Antwoord</button>
-                                <p id="result-message"></p>
+                            <div class="down-clues">
+                                <h3>Verticaal</h3>
+                                <ul></ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="answer-section">
+                        <input type="text" id="answer-input" placeholder="Voer het laatste woord in">
+                        <button id="check-answer">Controleer</button>
                     </div>
                 </div>
             </div>

@@ -175,6 +175,32 @@ nav ul li a {
     font-size: 25px;
 }
 
+.endangered {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.endangered-button {
+    padding: 1rem 2rem;
+    height: 25px;
+    width: 300px;
+    background-color: var(--color2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.endangered-button:hover {
+    background-color: #45a049;
+}
 
 @media screen and (max-width: 768px) {
     body {
