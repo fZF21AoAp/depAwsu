@@ -101,7 +101,7 @@ nav ul li a {
     background-color: var(--color2);
     padding: 20px;
     border-radius: 10px;
-    min-height: 325px;
+    min-height: 225px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -112,7 +112,7 @@ nav ul li a {
     background-color: var(--color2);
     padding: 20px;
     border-radius: 10px;
-    min-height: 325px;
+    min-height: 225px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
