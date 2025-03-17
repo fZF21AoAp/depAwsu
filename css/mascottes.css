@@ -420,6 +420,10 @@ main img {
     background-color: var(--color1);
 }
 
+.help {
+    color: var(--color3);
+}
+
 /* Final word display */
 .final-word-display {
     margin-top: 30px;
