@@ -447,6 +447,13 @@ main img {
     font-weight: bold;
 }
 
+
+
+.passport img {
+    width: 20.2rem;
+}
+
+
 /* Consolidated Media Queries */
 @media screen and (max-width: 768px) {
     body {
@@ -558,6 +565,10 @@ main img {
         width: 60%;
         max-width: 200px;
     }
+    
+    .passport img {
+        width: 15.2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -658,6 +669,10 @@ main img {
         height: 30px;
         font-size: 18px;
         line-height: 30px;
+    }
+    
+    .passport img {
+        width: 10.2rem;
     }
 }
 
